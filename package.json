@@ -6,16 +6,20 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js",
+    "lintfix": "yarn lint:js --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
     "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "nuxt": "^2.15.8",
     "sass": "^1.49.7",
@@ -26,6 +30,12 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
+    "@nuxtjs/eslint-config": "^8.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "eslint": "^8.4.1",
+    "eslint-plugin-nuxt": "^3.1.0",
+    "eslint-plugin-vue": "^8.2.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0"
   }
