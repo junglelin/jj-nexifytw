@@ -1,0 +1,52 @@
+body
+	background-color: grey
+#app
+	background-color: #fff
+	padding: 2rem
+	border-radius: 10px
+
+	a
+		color: #fff
+		text-decoration: none
+		padding: .5rem 1rem
+		border-radius: 5px
+
+	.tools-wrap
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		margin-bottom: 2rem
+
+		div:not(:first-child)
+			text-align: center
+
+		div:last-child
+			text-align: right
+
+		.create
+			background-color: #4050b9
+		.save
+			background-color: #f44236
+		.update
+			background-color: #fe4181
+
+	.data-wrap
+		.row
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr 1fr
+			border-bottom: 1px solid #ddd
+			margin: 1rem 0
+
+			&.hide
+				visibility: hidden
+
+			.col
+				padding: .5rem 1rem
+		
+				input,
+				textarea
+					width: 100%
+					border: none
+					border-bottom: 2px solid #999
+	
+		font-size: 1rem
+		color: grey
