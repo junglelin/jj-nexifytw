@@ -1,13 +1,8 @@
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/jj-nexifytw/'
-        }
-      }
-    : {}
-
 export default {
+  target: 'static',
+  router: {
+    base: '/jj-nexifytw/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nexifytw',
