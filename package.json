@@ -1,7 +1,8 @@
 {
-  "name": "nuxtapp",
+  "name": "jj-nexifytw",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://junglelin.github.io/jj-nexifytw",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -9,12 +10,15 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "lintfix": "yarn lint:js --fix"
+    "lintfix": "yarn lint:js --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
+    "gh-pages": "^3.2.3",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "nuxt": "^2.15.8",
